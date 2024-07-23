@@ -4,9 +4,13 @@ Stack: JavaScript, Next.js, CSS, Express.js, SQL(?)
 Tools: Github, Trello, VS Code, Figma
 
 Phase 1
+
 Research and come up with 12 questions for the personality test
+
 Develop low-fidelity prototype
+
 Discuss development plan
+
 Get familiar with the tech stack and tools
 
 Links
