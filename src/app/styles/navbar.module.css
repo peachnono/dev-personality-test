@@ -1,0 +1,62 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #4535C1;
+    color: #fff;
+    font-family: 'Robotica Mono', monospace;
+  }
+  
+  .logo a {
+    color: #fff;
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
+  
+  .navLinks {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .navLinks a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+
+  .navLinks a:hover {
+    color: #FFD700; 
+  }
+
+
+  .navLinks .active a {
+    color: #ADFF27; 
+  }
+
+  
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .hamburger span {
+    height: 3px;
+    width: 25px;
+    background-color: #fff;
+    margin: 3px 0;
+    border-radius: 2px;
+  }
+  
+  @media (max-width: 768px) {
+    .navLinks {
+      display: none;
+    }
+    
+    .hamburger {
+      display: flex;
+    }
+  }
+  

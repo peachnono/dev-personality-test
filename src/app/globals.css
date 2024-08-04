@@ -93,6 +93,9 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+    font-family: 'Roboto', monospace;
+    margin: 0;
+    padding: 0;
 }
 
 a {

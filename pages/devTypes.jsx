@@ -1,10 +1,16 @@
-// pages/index.js
-import Head from 'next/head'
-import styles from '/src/app/page.module.css'
+// IMPORTANT NOTE //
+// This file is a placeholder for the actual page that will be created in the future.
+// The code below is a copy of the index.jsx file with the title changed to "DeveloperTypes".
+// The actual content of the page will be added in the future.
 
-export default function Home() {
+import Head from 'next/head'
+import styles from '/src/app/styles/page.module.css'
+import Navbar from './components/navbar.jsx';
+
+export default function DeveloperTypes() {
   return (
     <div className={styles.container}>
+      <Navbar />
       <Head>
         <title>My Next.js App</title>
         <meta name="description" content="Welcome to my Next.js app" />
