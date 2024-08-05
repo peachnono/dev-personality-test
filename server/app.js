@@ -9,7 +9,7 @@ const knex = require("knex")({
   client: "mysql2",
   connection: {
     host: "localhost",
-    database: "tick_a_task",
+    database: "dev_personality_test",
     user: "root",
     password: process.env.DB_PASSWORD,
   },
