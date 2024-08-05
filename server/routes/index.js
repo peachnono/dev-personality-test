@@ -20,4 +20,28 @@ router.get("/results", (req, res) => {
   res.json(results);
 });
 
+/*
+
+  FOR REFERENCE: 
+
+  FED = Front-End Developer
+  BED = Back-End Developer
+  FSD = Full-Stack Developer
+  DOE = DevOps Engineer
+  DBA = Database Administrator
+  GDV = Game Developer
+
+  TODO: 
+  Update README 
+  Finish all routes 
+  Test API with client page
+
+*/
+
+/* GET all questions */ 
+router.get("/api/question", async (req, res) => {
+  const questions = await req.db.from("questions").select("question_text");
+  res.json({questions});
+});
+
 module.exports = router;

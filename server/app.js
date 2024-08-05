@@ -5,6 +5,9 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 const cors = require('cors');
 const mysql = require("mysql2");
+
+require('dotenv').config();
+
 const knex = require("knex")({
   client: "mysql2",
   connection: {
