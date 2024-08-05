@@ -24,6 +24,7 @@
     color: #fff;
     text-decoration: none;
     font-size: 1rem;
+    transition-duration: 0.4s;
   }
 
   .navLinks a:hover {

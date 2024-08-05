@@ -17,7 +17,7 @@ const Navbar = () => {
         <li className={router.pathname === '/about' ? styles.active : ''}>
           <Link href="/about">About</Link>
         </li>
-        <li className={router.pathname === '/' ? styles.active : ''}>
+        <li className={router.pathname === '/resources' ? styles.active : ''}>
           <Link href="/resources">Resources</Link>
         </li>
       </ul>

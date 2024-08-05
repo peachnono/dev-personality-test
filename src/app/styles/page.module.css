@@ -1,10 +1,33 @@
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  text-align: center;
   align-items: center;
-  padding: 6rem;
-  min-height: 100vh;
+  padding: 5rem 20rem 1rem;
+  min-height: 50vh;
+  font-family: 'Robotica Mono', monospace;
+}
+.main h1 {
+  margin: 0.10rem;
+}
+
+.main button {
+  padding: 1rem 2rem;
+  margin-top: 5rem;
+  border: 2rem;
+  border-radius: 1em;
+  font-family: 'Robotica Mono', monospace;
+  font-weight: Bold;
+  font-size: 1rem;
+  background-color: #4535C1;
+  color: #fff;
+  transition-duration: 0.4s;
+}
+
+.main button:hover {
+  background-color: #ADFF27; /* Green */
+  color: #4535C1;
 }
 
 .description {
