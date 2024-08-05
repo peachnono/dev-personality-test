@@ -3,6 +3,17 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+const cors = require('cors');
+const mysql = require("mysql2");
+const knex = require("knex")({
+  client: "mysql2",
+  connection: {
+    host: "localhost",
+    database: "tick_a_task",
+    user: "root",
+    password: process.env.DB_PASSWORD,
+  },
+});
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
@@ -13,11 +24,17 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
+app.use(cors()); 
+
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use((req, res, next) => {
+  req.db = knex;
+  next();
+}); //call to db
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
