@@ -24,4 +24,23 @@
 
 I'll be posting all tasks and details on the Trello board. Feel free to assign yourself to any task you're interested in. Don’t hesitate to challenge yourself, even if you’re new to the task!
 
+## How to use 
+To run this app, the dependencies must be installed. To do this, type 
+
+### `npm install` 
+
+in the terminal/Command Prompt/Powershell. Then, build it by typing
+
+### `next build`
+
+then type
+
+### `npm run dev`
+
+Afterwards, open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+The page will reload when you make changes.
+You may also see any lint errors in the console.
+
 ---
+
